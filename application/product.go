@@ -35,17 +35,17 @@ fuc (p *Product) Disable() error {
 }
 
 fuc (p *Product) GetID() string {
-	
+	return p.IsValid
 }
 
 fuc (p *Product) GetName() string {
-	
+	return p.Name
 }
 
 fuc (p *Product) GetStatus() string {
-	
+	return p.Status
 }
 
 fuc (p *Product) GetPrice() float64 {
-	
+	return p.Price
 }
