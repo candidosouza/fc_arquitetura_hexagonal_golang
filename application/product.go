@@ -22,17 +22,22 @@ type Product struct {
 	Status string
 }
 
-fuc (p *Product) IsValid() (bool, error) {
+// fuc (p *Product) IsValid() (bool, error) {
 
-}
+// }
 
 fuc (p *Product) Enable() error {
-	
+	if p.Price > 0 {
+		p.Status = ENABLE
+		return nil
+	}
+
+	return erros.New("The price must be greater than zero to enable the product")
 }
 
-fuc (p *Product) Disable() error {
+// fuc (p *Product) Disable() error {
 	
-}
+// }
 
 fuc (p *Product) GetID() string {
 	return p.IsValid
